@@ -34,7 +34,7 @@ escalonamento de tarefas diárias utilizando round robin
                 printf("\n");
             } else {
                 total += tarefas[i].restante;
-                printf("-> %s concluído(a) em %d minutos\n", tarefas[i].nome, total);
+                printf("-> %s concluido(a) em %d minutos\n", tarefas[i].nome, total);
                 printf("\n");
                 tarefas[i].restante = 0;
                 tarefas[i].concluida = 1;
