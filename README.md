@@ -1,18 +1,19 @@
 # PCG-ALGORITMOS
 escalonamento de tarefas diárias utilizando round robin 
-#include <stdio.h>
-#include <string.h>
 
-#define quantum 15
-#define MAX 5
+    #include <stdio.h>
+    #include <string.h>
 
-typedef struct {
+    #define quantum 15
+    #define MAX 5
+
+    typedef struct {
     char nome[15];
     int restante;
     int concluida;
-} Tarefa;
+    } Tarefa;
 
-void escalonador(Tarefa tarefas[], int n) {
+    void escalonador(Tarefa tarefas[], int n) {
     int total = 0;
     int tarefas_concluidas = 0;
 
@@ -43,9 +44,9 @@ void escalonador(Tarefa tarefas[], int n) {
     }
 
     printf("\nTodas as tarefas foram concluidas em %d minutos.\n", total);
-}
+    }
 
-int main() {
+    int main() {
     int n;
     Tarefa tarefas[MAX];
 
@@ -68,4 +69,4 @@ int main() {
     escalonador(tarefas, n);
 
     return 0;
-}
+    }
