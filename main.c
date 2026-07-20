@@ -1,7 +1,4 @@
-# PCG-ALGORITMOS
-escalonamento de tarefas diárias utilizando round robin 
-
-    #include <stdio.h>
+ #include <stdio.h>
     #include <string.h>
 
     #define quantum 15
